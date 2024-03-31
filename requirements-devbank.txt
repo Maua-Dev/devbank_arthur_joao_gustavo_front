@@ -1,0 +1,7 @@
+install's:
+npm install react-router-dom
+
+
+
+rodar projeto:
+npm run dev
