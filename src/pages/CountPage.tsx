@@ -2,6 +2,7 @@
 import Button from "../components/Button";
 import HomePage from "./HomePage";
 import { Link } from "react-router-dom";
+import '../styles/CountPage.css';
 
 export default function CountPage() { 
     return(
