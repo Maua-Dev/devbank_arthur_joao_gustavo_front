@@ -4,4 +4,4 @@ npm install react-router-dom
 
 
 rodar projeto:
-npm run dev
+npm run dev (./devbank_arthur_joao_gustavo_front)

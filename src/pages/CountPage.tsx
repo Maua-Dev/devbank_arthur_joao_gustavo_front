@@ -7,8 +7,9 @@ import '../styles/CountPage.css';
 export default function CountPage() { 
     return(
         <>
-            <h1>veio para pagina de conta</h1>
-            <Link to="/" >Pagina Principal</Link>
+            <Button />
+            <h1>DevBank</h1>
+            <Link to="/" >Voltar</Link>
         </>
     );
 }
