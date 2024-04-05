@@ -1,8 +1,8 @@
 import React from 'react';
+import './Button.css'
 
 const BotaoRedirecionamento = () => {
     const handleClick = () => {
-        // Substitua '/outra-pagina' pelo URL da página para a qual deseja redirecionar
         window.location.href = '/';
     };
 

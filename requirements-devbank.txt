@@ -1,7 +1,10 @@
 install's:
 npm install react-router-dom
-
+npm install axios
 
 
 rodar projeto:
 npm run dev (./devbank_arthur_joao_gustavo_front)
+
+API 
+https://r2tcz6zsokynb72jb6o4ffd5nm0ryfyz.lambda-url.us-west-2.on.aws/ (so inserir na caixa de texto para ir para outra página)

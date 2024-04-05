@@ -1,0 +1,9 @@
+.btnButton{
+    position: absolute;
+    left: 20px;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin: 0;
+}

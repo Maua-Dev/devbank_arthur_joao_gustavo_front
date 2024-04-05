@@ -3,7 +3,7 @@ import '../styles/ErrorPage.css';
 
 export default function ErrorPage() {
     return (
-        <div>
+        <div className='btnError'> 
             <p>Error 404!</p>
         </div>
     )
