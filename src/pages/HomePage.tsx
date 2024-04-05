@@ -28,8 +28,8 @@ const HomePage = () =>{
                 </div>
                 <br />
                 <div>
-                    <input type="text" placeholder="Digite a URL da API" onChange={(event) => setApi(event.target.value)} />
-                    <button onClick={testeApi}>Acessar</button>
+                    <input type="text" placeholder="Digite a URL da API" onChange={(event) => setApi(event.target.value)} className="inputAPI" />
+                    <button onClick={testeApi} className="btnAcessar">Acessar</button>
                 </div>
             </>
         );

@@ -1,7 +1,11 @@
 Button{
     border-radius: 10px;
     padding: 10px;
+    margin-top: 30px;
+    margin-left: 20px;
 }
+
 .countPage{
     position: relative;
+    margin-top: -20px;
 }
