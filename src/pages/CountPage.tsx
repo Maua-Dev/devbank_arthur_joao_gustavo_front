@@ -13,10 +13,6 @@ export default function CountPage() {
         current_balance: 0
     });
 
-    const handleClick = () => {
-        navigate('/');
-    };
-
     useEffect(() => {
         const fetchData = async () => {
             try {
