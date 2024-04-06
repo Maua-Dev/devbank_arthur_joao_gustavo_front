@@ -1,15 +1,10 @@
 Button{
-    border-radius: 10px;
-    border: 1px solid transparent;
-    padding: 30px;
-    display: flex;
-    justify-content: start;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  padding: 30px;
+  justify-content: start;
 }
 button:hover {
-    border-color: #f79503;
-    border-width: 5px;
-}
-button:focus,
-button:focus-visible {
-  outline: auto -webkit-focus-ring-color;
+  border-color: #030596;
+  border-width: 5px;
 }

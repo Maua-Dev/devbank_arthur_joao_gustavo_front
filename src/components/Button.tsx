@@ -1,15 +1,17 @@
-import './Button.css';
+import { Link } from 'react-router-dom';
+import './Button.css'
 
-const BotaoRedirecionamento = () => {
-    const handleClick = () => {
-        window.location.href = '/';
-    };
+type ButtonProps = {
+    to: string;
+    text: string;
+};
+
+const Button = ({ to, text }: ButtonProps) => {
     return (
-        <button onClick={handleClick}>
-            <img src="#" alt="" /> {/* caso der pra colocar a foto*/}
-             Voltar para página inicial
-        </button>
+        <Link to={to}>
+            <button>{text}</button>
+        </Link>
     );
 };
 
-export default BotaoRedirecionamento;
+export default Button;

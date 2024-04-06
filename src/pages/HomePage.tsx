@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import axios from 'axios';
 import '../styles/HomePage.css'
 
 const HomePage = () =>{
@@ -26,7 +25,7 @@ const HomePage = () =>{
         return(
             <>
                 <div>
-                    <img src="src/assets/devlogo.png" alt="devlogo" />
+                    <img src="src/assets/devlogo.png" alt="devlogo" className="imgDevBank"/>
                     <Link to="/CountPage">Conta</Link> {/*link para outras páginas */}
                 </div>
                 <br />
