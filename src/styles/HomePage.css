@@ -5,14 +5,14 @@ h1{
     margin-bottom: 2rem;
     font-size: 5rem;
 }
-div > input{
+.inputAPI{
     font-size: 2rem;
     border-radius: 30px;
     display: block; /*centralizacao do input */
     margin: 10rem auto; /*centralizacao do input, mexendo no valor de "rem" ajusta o lugar dela */
     padding: 5px;
 }
-div > button{
+.btnAcessar{
     display: block; /*centralizacao do input */
     margin: 10rem auto
 }
