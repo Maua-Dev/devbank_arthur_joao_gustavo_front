@@ -11,7 +11,7 @@ export function AppRouter() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/CountPage" element={<CountPage />} />
-          <Route path="*" element={<ErrorPage />} />
+          <Route path="/ErrorPage" element={<ErrorPage />} />
         </Routes>
       </BrowserRouter>
     </>

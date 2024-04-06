@@ -1,21 +1,28 @@
+import React from 'react';
+import Button from "./Button.css";
+import withdrawButton from "..components/withdrawButton";
+import { useEffect } from "react";
 
-import Button from "../components/Button";
-import HomePage from "./HomePage";
-import { Link } from "react-router-dom";
-import { useEffect, useState } from "react";
-import '../styles/CountPage.css';
+export default function CountPage() {
 
-export default function CountPage() { 
-
+    const handleClick = () => {
+        window.location.href = '/';
+    };
 
     useEffect(() => {
             
     }, [])
 
     return(
-        <div className="countPage" >
-            <Button />
+        <div>
             <h1>DevBank</h1>
+            <button onClick={handleClick}> Voltar para página inicial </button>
+            <div>
+            <h2>Saque</h2>
+            <button onClick={handleClick}> Saque </button>
+            <button onClick={handleClick}> Depósito </button>
+            <button onClick={handleClick}> Transação </button>
+            </div>
         </div>
     );
 }

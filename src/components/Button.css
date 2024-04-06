@@ -1,9 +1,15 @@
-.btnButton{
-    position: absolute;
-    left: 20px;
-    top: 50px;
+Button{
+    border-radius: 10px;
+    border: 1px solid transparent;
+    padding: 30px;
     display: flex;
-    flex-direction: column;
     justify-content: start;
-    margin: 0;
+}
+button:hover {
+    border-color: #f79503;
+    border-width: 5px;
+}
+button:focus,
+button:focus-visible {
+  outline: auto -webkit-focus-ring-color;
 }
