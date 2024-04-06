@@ -16,5 +16,8 @@ h1{
     display: block; /*centralizacao do input */
     margin: 10rem auto
 }
-    
+img{
+    margin: auto;
+  display: block;
+}
     
