@@ -8,3 +8,9 @@ npm run dev (./devbank_arthur_joao_gustavo_front)
 
 API 
 https://r2tcz6zsokynb72jb6o4ffd5nm0ryfyz.lambda-url.us-west-2.on.aws/ (so inserir na caixa de texto para ir para outra página)
+
+Documentação:
+https://mauabr-my.sharepoint.com/:w:/g/personal/22_00370-3_maua_br/EZTzHUmOlaFJuE2_ZIdIgSoBLiumOjdH_n6hsJl_gY-jEg?e=cOuVFi
+
+Figma:
+https://www.figma.com/file/mpWIcDHVl1lIvZZHpONU5G/DevBank?type=design&node-id=0-1&mode=design&t=ggSdHWWcv8zvWhLV-0

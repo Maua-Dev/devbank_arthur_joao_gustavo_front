@@ -1,11 +1,14 @@
 import { Link } from "react-router-dom";
-import '../styles/HomePage.css'
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import axios from 'axios';
+import '../styles/HomePage.css'
 
 const HomePage = () =>{
 
-        const [api, setApi] = useState<string> ("")
+        const [api, setApi] = useState<string>("")
+        const navigate = useNavigate() 
+
 
         useEffect(() => {
 
@@ -13,10 +16,10 @@ const HomePage = () =>{
 
         const testeApi = () =>{
             if (api == 'https://r2tcz6zsokynb72jb6o4ffd5nm0ryfyz.lambda-url.us-west-2.on.aws/'){
-                window.location.href = '/CountPage';
+                navigate("/CountPage")
             }
             else{
-                window.location.href = '/ErrorPage'
+                navigate("/ErrorPage")
             }
         }
         

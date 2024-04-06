@@ -1,0 +1,25 @@
+.txtDevBankCountPage{
+    margin: 2rem auto;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 5rem;
+}
+
+.infoCount{
+    width: 300px;
+    height: 180px;
+    background-color: white;
+    margin-right: 30px;
+    margin-top: 30px;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    border-radius: 25px;
+}
+
+.txtInfoCount{
+    color: black;
+    padding: 25px; /* Add padding to move the text inside the square */
+}
+
