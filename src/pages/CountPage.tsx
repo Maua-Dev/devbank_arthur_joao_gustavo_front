@@ -1,11 +1,10 @@
 import { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import '../styles/CountPage.css';
 import Button from '../components/Button';
+import '../styles/CountPage.css';
 
 export default function CountPage() {
-    const navigate = useNavigate();
+
     const [accountData, setAccountData] = useState({
         name: '',
         agency: '',

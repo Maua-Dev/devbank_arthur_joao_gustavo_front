@@ -1,10 +1,10 @@
-import React from 'react';
 import '../styles/ErrorPage.css';
 
 export default function ErrorPage() {
     return (
-        <div className='btnError'> 
-            <p>Error 404!</p>
+        <div> 
+            <p className='btnError'><u>Error 404!</u></p>
+            <p className='txtError'>Coloque a API certa!!!</p>
         </div>
     )
 }
