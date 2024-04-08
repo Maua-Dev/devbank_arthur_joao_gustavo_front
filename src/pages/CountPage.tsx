@@ -32,9 +32,24 @@ export default function CountPage() {
             <Button text='Pagina Inicial' to='/'/>
             <div>
                 <h1>Opções</h1>
-                <Button text='Saque' to='/SaquePage'/>
-                <Button text='Depósito' to='/DepositPage'/>
-                <Button text='Transições' to='/TransitionsPage'/>
+                <div className='saqueContainer'>
+                    <img src='../assets/images/save-money.png' alt="SaquePNG" /> 
+                    <div className="btnButtonLinkPage">
+                        <Button text='Saque' to='/SaquePage' />
+                    </div>
+                </div>
+                <div className='depositContainer'>
+                    <img src='../assets/images/deposit.png' alt="DepositPNG" />
+                    <div className="btnButtonLinkPage">
+                        <Button text='Depósito' to='/DepositPage'/>
+                    </div>
+                </div>
+                <div className="transitionsContainer">
+                    <img src='../assets/images/historic.png' alt="HistoricoPNG" />
+                    <div className="btnButtonLinkPage">
+                        <Button text='Histórico' to='/TransitionsPage' />
+                    </div>
+                </div>
             </div>
             <div className='infoCount'>
                 <div className='txtInfoCount'>

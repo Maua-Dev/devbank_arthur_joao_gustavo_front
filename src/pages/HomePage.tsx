@@ -25,7 +25,7 @@ const HomePage = () =>{
         return(
             <>
                 <div>
-                    <img src="src/assets/devlogo.png" alt="devlogo" className="imgDevBank"/>
+                    <img src="src/assets/images/devlogo.png" alt="devlogo" className="imgDevBank"/>
                     <Link to="/CountPage">Conta</Link> {/*link para outras páginas */}
                 </div>
                 <br />

@@ -20,6 +20,24 @@
 
 .txtInfoCount{
     color: black;
-    padding: 25px; /* Add padding to move the text inside the square */
+    padding: 25px; 
 }
 
+.saqueContainer, .depositContainer, .transitionsContainer{
+    display: inline-block;
+    margin-right: 10px; /* Espaçamento entre os elementos */
+    margin-left: 30px;
+    padding: 20px;
+    background-color: #FF8A00;
+    width: 350px;
+    height: 370px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.btnButtonLinkPage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 270px;
+}

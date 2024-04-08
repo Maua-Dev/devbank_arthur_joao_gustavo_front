@@ -1,3 +1,4 @@
+import '../styles/TransitionsPage.css'
 
 function TransitionsPage() {
   return (
