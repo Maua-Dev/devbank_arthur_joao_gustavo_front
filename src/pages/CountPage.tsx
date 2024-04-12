@@ -28,8 +28,14 @@ export default function CountPage() {
 
     return (
         <div>
-            <h1 className='txtDevBankCountPage'>DevBank</h1>
-            <Button text='Pagina Inicial' to='/'/>
+            <div className="container">
+                <div className='header'> 
+                    <h1>DevBank</h1>
+                </div>
+                <div className='btnVoltar'>
+                    <Button text='Pagina Inicial' to='/' />
+                </div>
+            </div>
             <div>
                 <h1>Opções</h1>
                 <div className='saqueContainer'>
@@ -41,7 +47,7 @@ export default function CountPage() {
                 <div className='depositContainer'>
                     <img src='../assets/images/deposit.png' alt="DepositPNG" />
                     <div className="btnButtonLinkPage">
-                        <Button text='Depósito' to='/DepositPage'/>
+                        <Button text='Depósito' to='/DepositPage' />
                     </div>
                 </div>
                 <div className="transitionsContainer">
