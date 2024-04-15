@@ -6,5 +6,5 @@ Button{
 }
 button:hover {
   border-color: #030596;
-  border-width: 5px;
+  border-width: 1px;
 }

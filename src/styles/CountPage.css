@@ -1,25 +1,63 @@
-.txtDevBankCountPage{
-    margin: 2rem auto;
-    text-align: center;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    font-size: 5rem;
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    flex: 1; 
+    text-align: center; 
+    font-size: 2rem;
+    margin-left: 20px; 
+}
+
+.btnVoltar{
+    margin-left: 10px;
 }
 
 .infoCount{
-    width: 300px;
-    height: 180px;
+    width: 250px;
+    height: 160px;
     background-color: white;
-    margin-right: 30px;
-    margin-top: 30px;
     position: absolute;
     top: 20px;
     right: 30px;
     border-radius: 25px;
 }
 
+@media (max-width: 840px) {
+    .container {
+      flex-direction: column-reverse; 
+    }
+}
+
+.btnButtonLinkPage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 270px;
+}
 .txtInfoCount{
     color: black;
-    padding: 25px; /* Add padding to move the text inside the square */
+    padding: 25px; 
 }
+
+.saqueContainer, .depositContainer, .transitionsContainer{
+    display: inline-block;
+    margin-right: 10px; /* Espaçamento entre os elementos */
+    margin-left: 30px;
+    margin-bottom: 10px;
+    padding: 20px;
+    background-color: #FF8A00;
+    width: 350px;
+    height: 370px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.btnButtonLinkPage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 270px;
+}
+
 

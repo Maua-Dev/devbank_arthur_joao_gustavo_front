@@ -1,3 +1,4 @@
+import '../styles/SaquePage.css'
 
 function SaquePage() {
   return (

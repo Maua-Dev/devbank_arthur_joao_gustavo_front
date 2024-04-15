@@ -4,12 +4,13 @@ import './Button.css'
 type ButtonProps = {
     to: string;
     text: string;
+    className?: string; 
 };
 
-const Button = ({ to, text }: ButtonProps) => {
+const Button = ({ to, text, className }: ButtonProps) => {
     return (
         <Link to={to}>
-            <button>{text}</button>
+            <button className={className}>{text}</button>
         </Link>
     );
 };

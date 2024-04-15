@@ -1,11 +1,10 @@
 import { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import '../styles/CountPage.css';
 import Button from '../components/Button';
+import '../styles/CountPage.css';
 
 export default function CountPage() {
-    const navigate = useNavigate();
+
     const [accountData, setAccountData] = useState({
         name: '',
         agency: '',
@@ -29,13 +28,34 @@ export default function CountPage() {
 
     return (
         <div>
-            <h1 className='txtDevBankCountPage'>DevBank</h1>
-            <Button text='Pagina Inicial' to='/'/>
+            <div className="container">
+                <div className='header'> 
+                    <h1>DevBank</h1>
+                </div>
+                <div className='btnVoltar'>
+                    <Button text='Pagina Inicial' to='/' />
+                </div>
+            </div>
             <div>
                 <h1>Opções</h1>
-                <Button text='Saque' to='/SaquePage'/>
-                <Button text='Depósito' to='/DepositPage'/>
-                <Button text='Transições' to='/TransitionsPage'/>
+                <div className='saqueContainer'>
+                    <img src='../assets/images/save-money.png' alt="SaquePNG" /> 
+                    <div className="btnButtonLinkPage">
+                        <Button text='Saque' to='/SaquePage' />
+                    </div>
+                </div>
+                <div className='depositContainer'>
+                    <img src='../assets/images/deposit.png' alt="DepositPNG" />
+                    <div className="btnButtonLinkPage">
+                        <Button text='Depósito' to='/DepositPage' />
+                    </div>
+                </div>
+                <div className="transitionsContainer">
+                    <img src='../assets/images/historic.png' alt="HistoricoPNG" />
+                    <div className="btnButtonLinkPage">
+                        <Button text='Histórico' to='/TransitionsPage' />
+                    </div>
+                </div>
             </div>
             <div className='infoCount'>
                 <div className='txtInfoCount'>

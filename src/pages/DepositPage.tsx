@@ -1,3 +1,4 @@
+import '../styles/Depositpage.css'
 
 function DepositPage() {
   return (
