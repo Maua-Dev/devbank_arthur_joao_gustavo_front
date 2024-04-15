@@ -1,30 +1,24 @@
-import { useState, useEffect } from 'react';
+import { useEffect, useContext } from 'react';
+import { DadosConta } from '../context/ApiContext';
 import axios from 'axios';
 import Button from '../components/Button';
 import '../styles/CountPage.css';
 
 export default function CountPage() {
+        const { setName, setAgency, setAccount, setCurrent_Balance, name, agency, account, current_balance} = useContext(DadosConta) //pega todas as variaveis do contexto e tras para esta pagina para ser usada
 
-    const [accountData, setAccountData] = useState({
-        name: '',
-        agency: '',
-        account: '',
-        current_balance: 0
-    });
+    const ApiAccount = async () => {
+        const api = 'https://r2tcz6zsokynb72jb6o4ffd5nm0ryfyz.lambda-url.us-west-2.on.aws/' //n sei se ta certo estar neste lugar
+        const response = await axios.get(api)
+        setName(response.data.name) //mostra o nome
+        setAgency(response.data.agency) //mostra a agencia
+        setAccount(response.data.account) //mostra a conta
+        setCurrent_Balance(response.data.current_balance) //mostra o saldo
+    }
 
-    useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const response = await axios.get('https://r2tcz6zsokynb72jb6o4ffd5nm0ryfyz.lambda-url.us-west-2.on.aws/');
-                setAccountData(response.data);
-                console.log(response)
-            } catch (error) {
-                console.error('Erro Status:', error);
-            }
-        };
-
-        fetchData();
-    }, []);
+    useEffect(()=> { //dispara acao se ocorrer outra acao
+        ApiAccount()
+    }, [])
 
     return (
         <div>
@@ -59,13 +53,13 @@ export default function CountPage() {
             </div>
             <div className='infoCount'>
                 <div className='txtInfoCount'>
-                    <p>Nome: {accountData.name}</p>
+                    <p>Nome: {name}</p>
                     <br />
-                    <p>Agencia: {accountData.agency}</p>
+                    <p>Agencia: {agency}</p>
                     <br />
-                    <p>Conta: {accountData.account}</p>
+                    <p>Conta: {account}</p>
                     <br />
-                    <p>Saldo: {accountData.current_balance}</p>
+                    <p>Saldo: {current_balance}</p>
                 </div>
             </div>
         </div>

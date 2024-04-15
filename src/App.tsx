@@ -1,13 +1,13 @@
+import { APIDados } from "./context/ApiContext";
 import AppRouter from "./AppRouter";
-import { ApiContextProvider } from './context/ApiContext';
 import './App.css'
 
 function App() {
   return (
     <>
-    <ApiContextProvider>
+    <APIDados>
       <AppRouter />
-    </ApiContextProvider>
+    </APIDados>
     </>
   )
 }

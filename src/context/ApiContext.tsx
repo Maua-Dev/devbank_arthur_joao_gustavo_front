@@ -1,38 +1,47 @@
-import React, { createContext, useState, useEffect } from 'react';
+import { ReactNode, createContext, useState } from "react"
+//ReactNode - aceita qualquer tipo de conteúdo renderizavel
 
-interface MyApiData{
-  name: string
-  agency: number
-  account: string
-  current_balance: number
+//estrutura dos dados esperado
+type DadosInfoCount= {
+  name: string,
+  agency: string,
+  account: string,
+  current_balance: number,
+  
+  //funcoes que aceitam uma acao para atualizar o estado de cada variavel escrita 
+  setName: React.Dispatch<React.SetStateAction<string>>,
+  setAgency: React.Dispatch<React.SetStateAction<string>>,
+  setAccount: React.Dispatch<React.SetStateAction<string>>,
+  setCurrent_Balance: React.Dispatch<React.SetStateAction<number>>,
 }
 
-const MyDataContext = createContext<MyApiData | null>(null); //usado para compartilhar dados entre componentes. <MyApiData | null> -> pode ser null ou MyApiData
+//contexto com valores vazios para seres recebidos 
+const defaultDadosInfoCount : DadosInfoCount = {
+  name: "",
+  agency: "",
+  account: "",
+  current_balance: 0,
+  
+  setName: ()=> {},
+  setAgency: ()=> {},
+  setAccount: ()=> {},
+  setCurrent_Balance: ()=> {},
+}
 
-const ApiContextProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => { //responsavel por fornecer dados da API para componentes filhos
-  const [apiData, setApiData] = useState<MyApiData | null>(null);
+export const DadosConta = createContext<DadosInfoCount>(defaultDadosInfoCount); //criação do contexto
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch('https://r2tcz6zsokynb72jb6o4ffd5nm0ryfyz.lambda-url.us-west-2.on.aws'); //await pois é uma requisicao http
-        const data = await response.json(); //response.json pois devolve um json para gente 
-        setApiData(data);
-      } 
-      catch (error) {
-        console.error('Status Erro:', error);
-      }
-      
-    };
-
-    fetchData();
-  }, []);
-
+export const APIDados = ({children} : {children: ReactNode }) => {
+    
+  const [name, setName] = useState<string>("")
+  const [agency, setAgency] = useState<string>("")
+  const [account, setAccount] = useState<string>("")
+  const [current_balance, setCurrent_Balance] = useState<number>(0)
+  
   return (
-    <MyDataContext.Provider value={apiData}>
-      {children}
-    </MyDataContext.Provider>
+    <DadosConta.Provider value = {{name, agency, account, current_balance, setName, setAgency, setAccount, setCurrent_Balance
+    }}>
+    {children} {/*contexto funcionando */}
+    </DadosConta.Provider>
+
   );
 };
-
-export { MyDataContext, ApiContextProvider };
