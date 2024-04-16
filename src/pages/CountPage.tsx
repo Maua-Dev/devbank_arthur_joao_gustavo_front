@@ -31,15 +31,18 @@ export default function CountPage() {
             <div className="container">
                 <div className='header'> 
                     <h1>DevBank</h1>
+                    <img src='..assets/images/devlogo.png'></img>
                 </div>
                 <div className='btnVoltar'>
                     <Button text='Pagina Inicial' to='/' />
                 </div>
             </div>
             <div>
+                <br></br>
                 <h1>Opções</h1>
+                <br></br>
                 <div className='saqueContainer'>
-                    <img src='../assets/images/save-money.png' alt="SaquePNG" /> 
+                    <img src='../assets/images/save-money.png' alt="SaquePNG" />
                     <div className="btnButtonLinkPage">
                         <Button text='Saque' to='/SaquePage' />
                     </div>

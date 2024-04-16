@@ -1,9 +1,13 @@
+import SumButton from '../components/sumButton.tsx';
 import '../styles/SaquePage.css'
 
 function SaquePage() {
   return (
     <div>
-      <h1>Pagina de saque</h1>
+      <div>
+        <h1> Página de Saque </h1>
+      </div>
+        <SumButton numero='2'/>
     </div>
   );
 }
