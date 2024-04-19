@@ -1,12 +1,12 @@
 import { useEffect, useContext } from 'react';
 import { DadosConta } from '../context/ApiContext';
+import  DevLogoIMG  from '@components/DevLogoIMG'
 import axios from 'axios';
 import Button from '../components/Button';
 import '../styles/CountPage.css';
 import money from '../assets/images/save-money.png'
 import historic from '../assets/images/historic.png'
 import deposit from '../assets/images/deposit.png'
-import devlogo from '../assets/images/devlogo.png'
 
 export default function CountPage() {
         const { setName, setAgency, setAccount, setCurrent_Balance, name, agency, account, current_balance} = useContext(DadosConta) //pega todas as variaveis do contexto e tras para esta pagina para ser usada
@@ -28,13 +28,11 @@ export default function CountPage() {
         <div>
             <div className="container">
                 <div className='header'> 
-                    <img src={devlogo}></img>
-                </div>
-                <div className='btnVoltar'>
+                    <DevLogoIMG />
                     <Button text='Pagina Inicial' to='/' />
                 </div>
             </div>
-            <div>
+            <div className='containerOpcoes'>
                 <br></br>
                 <h1>Opções</h1>
                 <br></br>

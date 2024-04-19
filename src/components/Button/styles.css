@@ -1,18 +1,10 @@
 Button{
-  width: 140px;
-  height: 15px;
   border-radius: 10px;
   border: 1px solid transparent;
-  padding: 30px;
-  justify-content:center;
-  font-size: 30px;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  margin: 20px;
-  
+  padding: 30px; 
 }
+
 button:hover {
-  border-color: #ffe600;
+  border-color: #030596;
+  border-width: 1px;
 }
- 
