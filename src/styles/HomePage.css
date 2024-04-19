@@ -15,8 +15,10 @@
 .btnAcessar{
     display: block; /*centralizacao do input */
     margin: 10rem auto;
-    padding: 5px;
-    border-radius: 10px;
+    padding: 25px;
+    border-radius: 20px;
+    width: 180px;
+    flex-direction: column;
 }
 .imgDevBank{
     margin: auto;
