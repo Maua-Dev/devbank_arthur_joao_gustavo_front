@@ -34,11 +34,12 @@
 .saqueContainer, .depositContainer, .transitionsContainer {
     display: inline-block;
     padding: 20px;
-    margin: 0 70px; 
+    margin: 0 43px; 
     background-color: #FF8A00;
     width: 310px;
     border-radius: 15px;
     text-align: center;
+    
 }
 
 
@@ -49,4 +50,10 @@
     margin-top: 270px;
 }
 
+.txtPaginaSaque, .txtPaginaDeposito, .txtPaginaHistoric{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+}   
 

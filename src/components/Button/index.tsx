@@ -10,7 +10,7 @@ type ButtonProps = {
 const Button = ({ to, text, className }: ButtonProps) => {
     return (
         <Link to={to}>
-            <button className={className}>{text}</button>
+            <button className={className}><strong>{text}</strong></button>
         </Link>
     );
 };

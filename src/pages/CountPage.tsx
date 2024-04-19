@@ -1,6 +1,7 @@
 import { useEffect, useContext } from 'react';
 import { DadosConta } from '../context/ApiContext';
 import  DevLogoIMG  from '@components/DevLogoIMG'
+import ButtonVoltarPagina from '@components/ButtonVoltarPagina';
 import axios from 'axios';
 import Button from '../components/Button';
 import '../styles/CountPage.css';
@@ -29,7 +30,7 @@ export default function CountPage() {
             <div className="container">
                 <div className='header'> 
                     <DevLogoIMG />
-                    <Button text='Pagina Inicial' to='/' />
+                    <ButtonVoltarPagina text='Voltar' to='/' />
                 </div>
             </div>
             <div className='containerOpcoes'>
@@ -37,18 +38,21 @@ export default function CountPage() {
                 <h1>Opções</h1>
                 <br></br>
                 <div className='saqueContainer'>
+                    <strong className='txtPaginaSaque'>Saque</strong>
                     <img src={money} style={{width: 250, height: 250}}  alt="SaquePNG" />
                     <div className="btnButtonLinkPage">
                         <Button text='Saque' to='/SaquePage' />
                     </div>
                 </div>
                 <div className='depositContainer'>
+                    <strong className='txtPaginaDeposito'>Deposito</strong>
                     <img src={deposit} style={{width: 250, height: 250}} alt="DepositPNG" />
                     <div className="btnButtonLinkPage">
                         <Button text='Depósito' to='/DepositPage' />
                     </div>
                 </div>
                 <div className="transitionsContainer">
+                    <strong className='txtPaginaHistoric'>Histórico</strong>
                     <img src={historic} style={{width: 250, height: 250}} alt="HistoricoPNG" />
                     <div className="btnButtonLinkPage">
                         <Button text='Histórico' to='/TransitionsPage' />
