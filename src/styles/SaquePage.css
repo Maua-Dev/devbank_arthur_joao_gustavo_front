@@ -1,0 +1,31 @@
+.block{
+    display: flex;
+    margin: 0 10px 10px 30px;
+    padding: 20px;
+    background-color: #FF8A00;
+    width: 250px;
+    height: 150px;
+    border-radius: 15px;
+    text-align: center;
+    justify-content: center;
+    font-size: 18px;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.saque {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 98vh;
+}

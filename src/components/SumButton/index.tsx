@@ -4,13 +4,13 @@ type sumButtonProps = {
     numero: string;
 }
 
-const sumButton = ({numero}: sumButtonProps) => {
+const sumButton = ({numero}:sumButtonProps) => {
     const handleClick = () =>{
         numero += numero
         console.log(numero)
     }
     return(
-        <button onClick={handleClick}> {numero} </button>
+        <button onClick={handleClick}> + </button>
     )
 }
 

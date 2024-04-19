@@ -1,16 +1,16 @@
 import './styles.css'
 
 type lessButtonProps = {
-    numero: string;
+    numero: number;
 }
 
 const lessButton = ({numero}: lessButtonProps) => {
     const handleClick = () =>{
-        numero += numero
+        numero -= numero
         console.log(numero)
     }
     return(
-        <button onClick={handleClick}> {numero} </button>
+        <button onClick={handleClick}> - </button>
     )
 }
 

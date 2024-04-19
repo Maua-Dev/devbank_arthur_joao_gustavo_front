@@ -11,9 +11,9 @@ function DepositPage() {
        <section>
         <button className="buttondeposit">-</button>
         <button className="buttondeposit">+</button>
-       </section>
-       
+       </section> 
       </div>
+
       <div className='block'>
        <h1>R$ 5</h1>
        <section>
@@ -21,6 +21,7 @@ function DepositPage() {
         <button className="buttondeposit">+</button>
        </section>
       </div>
+
       <div className='block'>
        <h1>R$ 10</h1>
        <section>
@@ -28,6 +29,7 @@ function DepositPage() {
         <button className="buttondeposit">+</button>
        </section>
       </div>
+
       <div className='block'>
        <h1>R$ 20</h1>
        <section>
@@ -35,6 +37,7 @@ function DepositPage() {
         <button className="buttondeposit">+</button>
        </section>
       </div>
+
       <div className='block'>
        <h1>R$ 50</h1>
        <section>
@@ -42,6 +45,7 @@ function DepositPage() {
         <button className="buttondeposit">+</button>
        </section>
       </div>
+
       <div className='block'>
        <h1>R$ 100</h1>
        <section>
@@ -49,6 +53,7 @@ function DepositPage() {
         <button className="buttondeposit">+</button>
        </section>
       </div>
+      
       <div className='block'>
        <h1>R$ 200</h1>
        <section>
