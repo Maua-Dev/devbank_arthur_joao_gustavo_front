@@ -1,4 +1,4 @@
-import '../components/sumButton.css'
+import './styles.css'
 
 type sumButtonProps = {
     numero: string;

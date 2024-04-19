@@ -1,4 +1,4 @@
-import '../components/lessButton.css'
+import './styles.css'
 
 type lessButtonProps = {
     numero: string;

@@ -1,6 +1,6 @@
 import '../styles/Depositpage.css'
-import '../components/lessButton.css'
-import '../components/sumButton.css'
+import '@components/LessButton'
+import '@components/SumButton'
 
 function DepositPage() {
   return (

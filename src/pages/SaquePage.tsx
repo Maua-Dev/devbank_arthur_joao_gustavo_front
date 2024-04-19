@@ -1,4 +1,4 @@
-import SumButton from '../components/sumButton.tsx';
+import SumButton from '../components/SumButton/index.tsx';
 import '../styles/SaquePage.css'
 
 function SaquePage() {
