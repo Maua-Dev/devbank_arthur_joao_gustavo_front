@@ -10,8 +10,13 @@
     align-items: center;
     flex-direction: row;
     margin: 20px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    
+    
     
   }
   .buttondeposit:hover {
     border-color: #ffe600;
+    transform:scale(1.03)
   }
