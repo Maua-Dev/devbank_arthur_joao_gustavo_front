@@ -1,0 +1,18 @@
+.ContainerConta{
+    background-color: #FF8A00;
+    width: 200px;
+    height: 150px;
+    border-radius : 25px;
+}
+
+.buttonsMinus-Sum{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.txtReaisSaquePage{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}

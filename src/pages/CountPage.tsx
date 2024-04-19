@@ -45,7 +45,7 @@ export default function CountPage() {
                     </div>
                 </div>
                 <div className='depositContainer'>
-                    <strong className='txtPaginaDeposito'>Deposito</strong>
+                    <strong className='txtPaginaDeposito'>Depósito</strong>
                     <img src={deposit} style={{width: 250, height: 250}} alt="DepositPNG" />
                     <div className="btnButtonLinkPage">
                         <Button text='Depósito' to='/DepositPage' />
