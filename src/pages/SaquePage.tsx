@@ -1,5 +1,4 @@
 import { DadosConta } from '../context/ApiContext';
-import DevLogoIMG from '@components/DevLogoIMG';
 import axios from 'axios';
 import { useContext, useEffect, useState } from 'react';
 import ButtonVoltarPagina from '@components/ButtonVoltarPagina';
@@ -28,7 +27,7 @@ function SaquePage() {
   }
 
   const sacar = async() => {
-    const resp = await axios.post(devBankApi +'/withdraw',{
+    const resp = await axios.post(devBankApi + '/withdraw',{
         "2": doisReais,
         "5": cincoReais,
         "10": dezReais,
@@ -66,15 +65,15 @@ function SaquePage() {
       </div>
 
       <div className='infoSaquePage'>
-          <div className='txtSaquePage'>
-              <p>Nome: {name}</p>
-              <br />
-              <p>Agencia: {agency}</p>
-              <br />
-              <p>Conta: {account}</p>
-              <br />
-              <p>Saldo: {current_balance}</p>
-          </div>
+        <div className='txtSaquePage'>
+          <p>Nome: {name}</p>
+          <br />
+          <p>Agencia: {agency}</p>
+          <br />
+          <p>Conta: {account}</p>
+          <br />
+          <p>Saldo: {current_balance}</p>
+        </div>
       </div>
       <button className="btnSacar" onClick={sacar}>Sacar</button>
     </div>

@@ -14,3 +14,6 @@ https://mauabr-my.sharepoint.com/:w:/g/personal/22_00370-3_maua_br/EZTzHUmOlaFJu
 
 Figma:
 https://www.figma.com/file/mpWIcDHVl1lIvZZHpONU5G/DevBank?type=design&node-id=0-1&mode=design&t=ggSdHWWcv8zvWhLV-0
+
+perguntas: aonde deve estar a API?
+como faz para aparecer o somatorio dos valores de sacar e depositar?
