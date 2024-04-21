@@ -1,4 +1,4 @@
-import '../styles/TransitionsPage.css'
+import '@styles/TransitionsPage.css';
 
 function TransitionsPage() {
   return (
