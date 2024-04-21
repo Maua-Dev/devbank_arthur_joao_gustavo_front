@@ -7,7 +7,7 @@ import Button from '../components/Button';
 import money from '../assets/images/save-money.png'
 import historic from '../assets/images/historic.png'
 import deposit from '../assets/images/deposit.png'
-import '@styles/CountPage.css'
+import '../styles/CountPage.css'
 
 export default function CountPage() {
         const { setName, setAgency, setAccount, setCurrent_Balance, name, agency, account, current_balance} = useContext(DadosConta) //pega todas as variaveis do contexto e tras para esta pagina para ser usada

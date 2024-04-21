@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import '@styles/HomePage.css'
-
+import '../styles/HomePage.css'
 const HomePage = () =>{
 
         const [api, setApi] = useState<string>("")

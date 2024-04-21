@@ -1,5 +1,4 @@
-import '@styles/ErrorPage.css';
-
+import '../styles/ErrorPage.css'
 export default function ErrorPage() {
     return (
         <div> 

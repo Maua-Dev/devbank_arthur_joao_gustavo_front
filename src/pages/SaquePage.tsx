@@ -3,7 +3,7 @@ import axios from 'axios';
 import { useContext, useEffect, useState } from 'react';
 import ButtonVoltarPagina from '@components/ButtonVoltarPagina';
 import ContainerConta from '@components/ContainersConta';
-import '@styles/SaquePage.css';
+import '../styles/SaquePage.css'
 
 function SaquePage() {
     const [doisReais, setDoisReais] = useState(0)
