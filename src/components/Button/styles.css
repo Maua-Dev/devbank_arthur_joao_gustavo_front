@@ -7,4 +7,5 @@ Button{
 button:hover {
   border-color: #030596;
   border-width: 1px;
+  cursor: pointer;
 }

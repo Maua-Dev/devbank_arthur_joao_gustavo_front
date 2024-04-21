@@ -34,28 +34,30 @@ export default function CountPage() {
                 </div>
             </div>
             <div className='containerOpcoes'>
-                <br></br>
-                <h1>Opções</h1>
-                <br></br>
+                <br />
+                <hr className='hrTagCountPage'/>
+                <h1 className='txtOpcoesCount'>Opções</h1>
+                <hr className='hrTagCountPage'/>
+                <br />
                 <div className='saqueContainer'>
                     <strong className='txtPaginaSaque'>Saque</strong>
-                    <img src={money} style={{width: 250, height: 250}}  alt="SaquePNG" />
+                    <img src={money} style={{width: 250, height: 250}} className='imgSaque' alt="SaquePNG" />
                     <div className="btnButtonLinkPage">
-                        <Button text='Saque' to='/SaquePage' />
+                        <Button text='Saque' to='/SaquePage' className='btnSaque'/>
                     </div>
                 </div>
                 <div className='depositContainer'>
                     <strong className='txtPaginaDeposito'>Depósito</strong>
-                    <img src={deposit} style={{width: 250, height: 250}} alt="DepositPNG" />
+                    <img src={deposit} style={{width: 250, height: 250}} className='imgDeposit' alt="DepositPNG" />
                     <div className="btnButtonLinkPage">
-                        <Button text='Depósito' to='/DepositPage' />
+                        <Button text='Depósito' to='/DepositPage' className='btnDeposit'/>
                     </div>
                 </div>
                 <div className="transitionsContainer">
                     <strong className='txtPaginaHistoric'>Histórico</strong>
-                    <img src={historic} style={{width: 250, height: 250}} alt="HistoricoPNG" />
+                    <img src={historic} style={{width: 250, height: 250}} className='imgHostoric' alt="HistoricoPNG" />
                     <div className="btnButtonLinkPage">
-                        <Button text='Histórico' to='/TransitionsPage' />
+                        <Button text='Histórico' to='/TransitionsPage' className='btnHostoric'/>
                     </div>
                 </div>
             </div>

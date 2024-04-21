@@ -39,9 +39,7 @@
     width: 310px;
     border-radius: 15px;
     text-align: center;
-    
 }
-
 
 .btnButtonLinkPage{
     display: flex;
@@ -55,5 +53,21 @@
     justify-content: center;
     align-items: center;
     font-size: 35px;
+    font-family:  'Courier New', Courier, monospace;
 }   
 
+.txtOpcoesCount{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    font-family:  'Courier New', Courier, monospace;
+}
+
+.imgSaque, .imgDeposit, .imgHostoric{
+    margin-top: 2rem;
+}
+
+.btnSaque, .btnDeposit, .btnHostoric{
+    margin-top: -20rem;
+}
