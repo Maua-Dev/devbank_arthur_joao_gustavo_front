@@ -14,12 +14,11 @@ function SaquePage() {
     const [cemReais, setCemReais] = useState(0)
     const [duzentosReais, setDuzentosReais] = useState(0)
 
-  const { setName, setAgency, setAccount, setCurrent_Balance, name, agency, account, current_balance} = useContext(DadosConta)
+  const { setName, setAgency, setAccount, setCurrent_Balance, name, agency, account, current_balance, api} = useContext(DadosConta)
 
-  const devBankApi = 'https://r2tcz6zsokynb72jb6o4ffd5nm0ryfyz.lambda-url.us-west-2.on.aws/'
 
   const ApiAccount = async () => {
-    const response = await axios.get(devBankApi)
+    const response = await axios.get(api)
     setName(response.data.name) //mostra o nome
     setAgency(response.data.agency) //mostra a agencia
     setAccount(response.data.account) //mostra a conta
@@ -27,7 +26,7 @@ function SaquePage() {
   }
 
   const sacar = async() => {
-    const resp = await axios.post(devBankApi + '/withdraw',{
+    const resp = await axios.post(api + '/withdraw',{
         "2": doisReais,
         "5": cincoReais,
         "10": dezReais,
@@ -37,6 +36,13 @@ function SaquePage() {
         "200": duzentosReais
     })
     setCurrent_Balance(resp.data.current_balance) // alteracao do saldo ocorre aqui
+    setDoisReais(0)
+    setCincoReais(0)
+    setDezReais(0)
+    setVinteReais(0)
+    setCinquentaReais(0)
+    setCemReais(0)
+    setDuzentosReais(0)
   }
 
   useEffect(() => {

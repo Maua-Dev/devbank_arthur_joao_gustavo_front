@@ -1,12 +1,13 @@
 import { Link } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useEffect, useContext } from "react";
 import { useNavigate } from "react-router-dom";
+import { DadosConta } from "../context/ApiContext";
 import '../styles/HomePage.css'
+
 const HomePage = () =>{
 
-        const [api, setApi] = useState<string>("")
+        const { api, setApi} = useContext(DadosConta)
         const navigate = useNavigate() 
-
 
         useEffect(() => {
             

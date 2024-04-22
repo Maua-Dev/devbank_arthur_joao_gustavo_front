@@ -10,10 +10,9 @@ import deposit from '../assets/images/deposit.png'
 import '../styles/CountPage.css'
 
 export default function CountPage() {
-        const { setName, setAgency, setAccount, setCurrent_Balance, name, agency, account, current_balance} = useContext(DadosConta) //pega todas as variaveis do contexto e tras para esta pagina para ser usada
+        const { setName, setAgency, setAccount, setCurrent_Balance, name, agency, account, current_balance, api} = useContext(DadosConta) //pega todas as variaveis do contexto e tras para esta pagina para ser usada
 
     const ApiAccount = async () => {
-        const api = 'https://r2tcz6zsokynb72jb6o4ffd5nm0ryfyz.lambda-url.us-west-2.on.aws/' //n sei se ta certo estar neste lugar
         const response = await axios.get(api)
         setName(response.data.name) //mostra o nome
         setAgency(response.data.agency) //mostra a agencia
