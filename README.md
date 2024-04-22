@@ -1,4 +1,4 @@
-<h1>DevBank Project - DevCommuniytMauá <img <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Activities/Party%20Popper.png" alt="Party Popper" width="45" height="45" /></h1>
+<h1>DevBank Project - DevCommunityMauá <img <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Activities/Party%20Popper.png" alt="Party Popper" width="45" height="45" /></h1>
 
 <h2>About Project</h2>
 
