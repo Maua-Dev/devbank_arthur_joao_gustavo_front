@@ -18,15 +18,16 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.imgDevBank{
-    margin: auto;
-    display: block;
-    margin-top: -60px
-}
 
 .hrTagCountPage{
     margin: 0 auto;
     width: 80%;
     border: 1px solid #FF8A00;
+}
+
+.imgDevBank{
+    margin: 0 auto;
+    display: block;
+    margin-top: 1rem;
 }
     

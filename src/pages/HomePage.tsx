@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { useEffect, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { DadosConta } from "../context/ApiContext";
+import DevLogoPreto from '@assets/images/DevImgPreto.png'
 import '../styles/HomePage.css'
 
 const HomePage = () =>{
@@ -25,7 +26,7 @@ const HomePage = () =>{
         return(
             <>
                 <div>
-                    <img src="src/assets/images/devlogo.png" alt="devlogo" className="imgDevBank"/>
+                    <img src={DevLogoPreto} alt="devlogo" className="imgDevBank"/>
                     <Link to="/CountPage">Conta</Link> {/*link para outras páginas */}
                 </div>
                 <br />
