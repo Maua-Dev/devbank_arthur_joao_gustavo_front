@@ -3,6 +3,7 @@ import axios from 'axios';
 import { useContext, useEffect, useState } from 'react';
 import ButtonVoltarPagina from '@components/ButtonVoltarPagina';
 import ContainerConta from '@components/ContainersConta';
+import devLogo from '../assets/images/DevImgPreto.png';
 import '../styles/Depositpage.css';
 
 function DepositPage() {
@@ -44,6 +45,8 @@ function DepositPage() {
 
   return (
     <div className='ContainierDeposito'>
+      <h1 className='h1tagDepositoPage'><u>Tela Depósito</u></h1>
+      <img src={devLogo} alt="devlogo" className='imgDevLogoPreto'/>
       <ButtonVoltarPagina className='btnVoltarPaginaSaque' text='Voltar' to='/CountPage' />
       <div className='ContainerDepositos'>
         <div className='ContainersMeioDeposito'>

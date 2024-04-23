@@ -58,3 +58,17 @@
     right: 20px;
 }
 
+.imgDevLogoPreto{
+    position: absolute;
+    top: 20%;
+    left: 27%;
+    transform: translate(-50%, -50%);
+    width: 20%; 
+    height: auto; 
+}
+
+.h1tagSaquePage{
+    font-family:  'Courier New', Courier, monospace;
+    text-align: center;
+    margin-top: 15px;
+}

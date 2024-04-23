@@ -3,6 +3,7 @@ import axios from 'axios';
 import { useContext, useEffect, useState } from 'react';
 import ButtonVoltarPagina from '@components/ButtonVoltarPagina';
 import ContainerConta from '@components/ContainersConta';
+import devLogo from '../assets/images/DevImgPreto.png'
 import '../styles/SaquePage.css'
 
 function SaquePage() {
@@ -52,6 +53,8 @@ function SaquePage() {
   return (
 
     <div className='ContainerSaquePage'>
+      <h1 className='h1tagSaquePage'><u>Tela Saque</u></h1>
+      <img src={devLogo} alt="devlogo" className='imgDevLogoPreto'/>
       <ButtonVoltarPagina className='btnVoltarPaginaSaque' text='Voltar' to='/CountPage'/>
       {/* pegar imagem "depositar" */}
       <div className='containerSaques'>
