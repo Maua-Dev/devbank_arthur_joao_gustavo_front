@@ -1,0 +1,7 @@
+.header{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    margin-top: 15px;
+}
