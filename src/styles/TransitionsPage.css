@@ -1,7 +1,38 @@
-.header{
+.headerTransitions{
     display: flex;
     flex-direction: column;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
     margin-top: 15px;
+    margin-bottom: 150px;
+}
+
+.historyData{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 960px;
+    height: 240px;
+    background-color: #FF8A00;
+    top: 25px;
+    right: 30px;
+    border-radius: 25px;
+    margin-left: 225px;
+}
+
+.infoTransitions{
+    width: 230px;
+    height: 170px;
+    background-color: white;
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    border-radius: 25px;
+}
+
+.txtInfoTransitions{
+    color: black;
+    padding: 25px; 
 }

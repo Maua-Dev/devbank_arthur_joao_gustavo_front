@@ -22,12 +22,12 @@ export default function TransitionsPage() {
 
   return (
     <div>
-        <div className='header'>
+        <header className='headerTransitions'>
             <h1><u>Histórico de Transações</u></h1>
             <ButtonVoltarPagina text='Voltar' to='/CountPage'/>
-        </div>
-        <div className='infoCount'>
-            <div className='txtInfoCount'>
+        </header>
+        <div className='infoTransitions'>
+            <div className='txtInfoTransitions'>
                 <p>Nome: {name}</p>
                 <br />
                 <p>Agencia: {agency}</p>
@@ -36,6 +36,9 @@ export default function TransitionsPage() {
                 <br />
                 <p>Saldo: {current_balance}</p>
             </div>
+        </div>
+        <div className='historyData'>
+            Historico Vazio
         </div>
     </div>
   );
