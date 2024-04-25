@@ -37,6 +37,13 @@ function DepositPage() {
       "200": duzentosReais
     });
     setCurrent_Balance(resp.data.current_balance); // alteracao do saldo ocorre aqui
+    setDoisReais(0)
+    setCincoReais(0)
+    setDezReais(0)
+    setVinteReais(0)
+    setCinquentaReais(0)
+    setCemReais(0)
+    setDuzentosReais(0)
   };
 
   useEffect(() => {
