@@ -34,12 +34,32 @@
 .saqueContainer, .depositContainer, .transitionsContainer {
     display: inline-block;
     padding: 20px;
-    margin: 0 43px; 
+    margin: 0 auto; 
     background-color: #FF8A00;
-    width: 310px;
+    max-width: 310px; 
+    width: 100%; 
     height: 500px;
     border-radius: 15px;
-    text-align: center;
+    text-align: center;   
+}
+
+/* responsividades */
+@media screen and (min-width: 768px) {
+    .saqueContainer, .depositContainer, .transitionsContainer {
+        margin: 0 20px; 
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .saqueContainer, .depositContainer, .transitionsContainer {
+        margin: 0 30px; 
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .saqueContainer, .depositContainer, .transitionsContainer {
+        margin: 0 40px; 
+    }
 }
 
 .btnButtonLinkPage{

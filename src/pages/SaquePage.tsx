@@ -1,5 +1,5 @@
 import { DadosConta } from '../context/ApiContext';
-import axios from 'axios';
+import axios, { isAxiosError } from 'axios';
 import { useContext, useEffect, useState } from 'react';
 import ButtonVoltarPagina from '@components/ButtonVoltarPagina';
 import ContainerConta from '@components/ContainersConta';
@@ -26,8 +26,11 @@ function SaquePage() {
     setCurrent_Balance(response.data.current_balance) //mostra o saldo
   }
 
+  const [error, setError] = useState<string>("")
+
   const sacar = async() => {
-    const resp = await axios.post(api + '/withdraw',{
+    try{
+      const resp = await axios.post(api + '/withdraw',{
         "2": doisReais,
         "5": cincoReais,
         "10": dezReais,
@@ -35,15 +38,22 @@ function SaquePage() {
         "50": cinquentaReais,
         "100": cemReais,
         "200": duzentosReais
-    })
-    setCurrent_Balance(resp.data.current_balance) // alteracao do saldo ocorre aqui
-    setDoisReais(0)
-    setCincoReais(0)
-    setDezReais(0)
-    setVinteReais(0)
-    setCinquentaReais(0)
-    setCemReais(0)
-    setDuzentosReais(0)
+      })
+      setCurrent_Balance(resp.data.current_balance) // alteracao do saldo ocorre aqui
+      setDoisReais(0)
+      setCincoReais(0)
+      setDezReais(0)
+      setVinteReais(0)
+      setCinquentaReais(0)
+      setCemReais(0)
+      setDuzentosReais(0)
+      setError("");
+    } catch (e){
+      if (isAxiosError(e)){
+        console.log(e.response?.data.detail);
+        setError(e.response?.data.detail) //mostra o erro
+      }
+    }
   }
 
   useEffect(() => {
@@ -51,7 +61,6 @@ function SaquePage() {
   }, [])
 
   return (
-
     <div className='ContainerSaquePage'>
       <h1 className='h1tagSaquePage'><u>Tela Saque</u></h1>
       <img src={devLogo} alt="devlogo" className='imgDevLogoPreto'/>
@@ -72,7 +81,9 @@ function SaquePage() {
           <ContainerConta className='txtDuzentosReais' number={200} valor={duzentosReais} setValor={setDuzentosReais}/>
         </div>
       </div>
-
+      <div className='txtError'>
+      {error != "" ? <h1>{error}</h1> : null } 
+      </div> 
       <div className='infoSaquePage'>
         <div className='txtSaquePage'>
           <p>Nome: {name}</p>

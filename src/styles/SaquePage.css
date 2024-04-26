@@ -72,3 +72,11 @@
     text-align: center;
     margin-top: 15px;
 }
+
+.txtError{
+    color: red;
+    font-family:  'Courier New', Courier, monospace;
+    text-align: center;
+    margin-top: 47rem;
+    font-size: 40px;
+}
