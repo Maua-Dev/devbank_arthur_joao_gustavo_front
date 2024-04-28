@@ -27,7 +27,6 @@ const HomePage = () =>{
             <>
                 <div>
                     <img src={DevLogoPreto} alt="devlogo" className="imgDevBank"/>
-                    <Link to="/CountPage">Conta</Link> {/*link para outras páginas */}
                 </div>
                 <br />
                 <div>
